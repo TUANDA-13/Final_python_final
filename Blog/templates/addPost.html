@@ -48,39 +48,37 @@
     </div>
     <div class="admin-content">
         <div class="button-group">
-            <a href="./addPost.html" class="btn btn-big admin">Add Post</a>
-            <a href="./managepost.html" class="btn btn-big admin">Manage Post</a>
+            <a href="#" class="btn btn-big admin">Add Post</a>
+            <a href="#" class="btn btn-big admin">Manage Post</a>
         </div>
         <div class="content">
             <h2 class="page-title">Manage Posts</h2>
-            <table>
-            <thead>
-                <th>N</th>
-                <th>Title</th>
-                <th>Author</th>
-                <th colspan="3">Action</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Bai tap 1</td>
-                    <td>Toan</td>
-                    <td><a href="#" class="edit">Edit</a></td>
-                    <td><a href="#" class="delete">Delete</a></td>
-                    <td><a href="#" class="publish">Publish</a></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Bai tap 2</td>
-                    <td>Toan tThanh</td>
-                    <td><a href="#" class="edit">Edit</a></td>
-                    <td><a href="#" class="delete">Delete</a></td>
-                    <td><a href="#" class="publish">Publish</a></td>
-                </tr>
-                
-            </tbody>
-            </table>
+            <form action="create.html" method="post"></form>
+                <div>
+                    <label>Title</label>
+                    <input type="text" name = "title" class="text-input">
+                </div>
+                <div>
+                    <label>Image</label>
+                    <input type="file" name="image" class="text-input">
+                </div>
+                <div>
+                    <label>Body</label>
+                    <textarea name="body" id = "body" ></textarea>
+                </div>
+                <div>
+                    <label>Topic</label>
+                    <select name="topic" class="text-input">
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Music">Music</option>
+                        <option value="Poems">Poems</option>
 
+
+                    </select>
+                </div>
+                <div>
+                <button type="submit" class="btn btn-bit">Add Post</button>
+                </div>
         </div>
     </div>
 </div>
@@ -90,6 +88,7 @@
 
 </body>
 <script src="https://kit.fontawesome.com/001ff89fb9.js" crossorigin="anonymous"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/script.js"></script>
 <!-- slick JS -->
